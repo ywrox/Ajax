@@ -14,10 +14,19 @@
       })
       */
       //Asynchronous
+      /*
       function callbackme(){
         console.log('response end');
       }
+
+      callbackme = function(){
+        console.log('response end');
+      }
       fetch('html').then(callbackme);
+      */
+      fetch('html').then(function(response){
+        console.log(response);
+      });
       console.log(1);
       console.log(2);
     ">
